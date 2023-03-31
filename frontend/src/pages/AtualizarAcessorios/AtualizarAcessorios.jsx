@@ -20,7 +20,7 @@ const useForm = (propsDoForm) => {
 
 const AtualizarAcessorios = () => {
   const formCadastro = useForm({
-    initialValues: { id: "", nome: "", tipo: "", descricao: "", preco: "", link: "" },
+    initialValues: { id: "", nome: "", tipo: "", descricao: "", preco: "", img: "" },
   });
   return (
     <div>
@@ -65,8 +65,8 @@ const AtualizarAcessorios = () => {
         />
         <input
           placeholder="link do acessorio"
-          name="link"
-          value={formCadastro.values.link}
+          name="img"
+          value={formCadastro.values.img}
           onChange={formCadastro.handleChange}
         />
         <button>Atualizar</button>

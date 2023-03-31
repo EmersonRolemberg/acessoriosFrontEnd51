@@ -18,7 +18,7 @@ const useForm = (propsDoForm) => {
         tipo: "",
         descricao: "",
         preco: "",
-        link: "",
+        img: "",
       });
     },
   };
@@ -73,8 +73,8 @@ const CadastrarAcessorios = () => {
         />
         <input
           placeholder="Link do acessorio"
-          name="link"
-          value={formCadastro.values.link}
+          name="img"
+          value={formCadastro.values.img}
           onChange={formCadastro.handleChange}
         />
 
